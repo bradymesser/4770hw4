@@ -18,6 +18,8 @@ for line in sys.stdin:
         data[genre] = []
         data[genre].append(rating)
 for genre in data:
+#     tempList = data[genre].sort()
+#     mid = int(len(tempList) / 2)
     print(genre,len(data[genre]))
 #     print(len(data[genre]))
 #     if current_genre == genre:
