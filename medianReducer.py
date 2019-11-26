@@ -18,27 +18,6 @@ for line in sys.stdin:
         data[genre] = []
         data[genre].append(rating)
 for genre in data:
-#     tempList = data[genre].sort()
-#     mid = int(len(tempList) / 2)
-    print(genre,len(data[genre]))
-#     print(len(data[genre]))
-#     if current_genre == genre:
-#         try:
-#             current_rating_list.append(float(rating))
-#         except ValueError:
-#             continue    
-#     else:
-#         if current_genre:
-#             current_rating_list = current_rating_list.sort()
-#             median = current_rating_list[len(current_rating_list)/2]
-#             print ("%s\t%s" % (current_genre, median))    
-#         current_genre = genre
-#         try:
-#             current_rating_list.append(float(rating))
-#         except ValueError:
-#             continue
-
-# if current_genre == genre:
-#     current_rating_list = current_rating_list.sort()
-#     median = current_rating_list[len(current_rating_list)/2]
-#     print ("%s\t%s" % (current_genre, median)) 
+    data[genre].sort()
+    mid = int(len(data[genre]) / 2)
+    print(genre,data[genre][mid])
